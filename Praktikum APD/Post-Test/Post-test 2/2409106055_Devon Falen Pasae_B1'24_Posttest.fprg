@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106055_Devon Falen Pasae_B1'24_Posttest"/>
+        <attribute name="authors" value="melch"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 11:31:01 PM"/>
+        <attribute name="created" value="bWVsY2g7TUVMQ0hJWkVERUs7MjAyNC0wOS0xODsxMDo0MzoyNiBQTTsyNjEy"/>
+        <attribute name="edited" value="bWVsY2g7TUVMQ0hJWkVERUs7MjAyNC0wOS0xODsxMTozMTowMSBQTTsxOzI3MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nama" type="String" array="False" size=""/>
+            <declare name="Umur" type="Integer" array="False" size=""/>
+            <declare name="Tinggi, Berat" type="Real" array="False" size=""/>
+            <declare name="StatusMahasiswa" type="String" array="False" size=""/>
+            <declare name="Jumlah" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan Nama&quot;" newline="True"/>
+            <input variable="Nama"/>
+            <output expression="&quot;Masukkan Umur (Tahun)&quot;" newline="True"/>
+            <input variable="Umur"/>
+            <output expression="&quot;Masukkan Tinggi Badan (cm)&quot;" newline="True"/>
+            <input variable="Tinggi"/>
+            <output expression="&quot;Masukkan Berat Badan (kg)&quot;" newline="True"/>
+            <input variable="Berat"/>
+            <output expression="&quot;Status Mahasiswa Aktif/Tidak Aktif&quot;" newline="True"/>
+            <input variable="StatusMahasiswa"/>
+            <assign variable="Jumlah" expression="Umur + Berat + Tinggi"/>
+            <if expression="StatusMahasiswa == &quot;Aktif&quot;">
+                <then>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="&quot;Bio Data Anda&quot;" newline="True"/>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="Nama" newline="True"/>
+                    <output expression="Umur" newline="True"/>
+                    <output expression="Tinggi" newline="True"/>
+                    <output expression="Berat" newline="True"/>
+                    <output expression="&quot;StatusMahasiswa = Aktif&quot;" newline="True"/>
+                    <output expression="Jumlah" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="&quot;Bio Data Anda&quot;" newline="True"/>
+                    <output expression="&quot;=============================&quot;" newline="True"/>
+                    <output expression="Nama" newline="True"/>
+                    <output expression="Umur" newline="True"/>
+                    <output expression="Berat" newline="True"/>
+                    <output expression="Tinggi" newline="True"/>
+                    <output expression="&quot;StatusMahasiswa = Tidak&quot;" newline="True"/>
+                    <output expression="Jumlah" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
