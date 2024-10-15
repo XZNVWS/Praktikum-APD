@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106055_Devon Falen Pasae_B1'24_Posttest 3"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-25 11:48:13 PM"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtNlA0MklSRDsyMDI0LTA5LTI1OzEwOjU5OjA1IFBNOzI5NTc="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtNlA0MklSRDsyMDI0LTA5LTI1OzExOjQ4OjEzIFBNOzI7MzA2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sisipersegi, luaspersegi, kelilingpersegi, alassegitiga, tinggisegitiga, sisisegitiga, luassegitiga, kelilingsegitiga, alasjajargenjang, tinggijajargenjang, sisijajargenjang, luasjajargenjang, kelilingjajargenjang, pilihan, sisiasegitiga, sisibsegitiga, sisicsegitiga, sisia, sisib, sisic, sisid" type="Real" array="False" size=""/>
+            <output expression="&quot;Menu Program Menghitung Luas/Keliling Bangun Datar&quot;" newline="True"/>
+            <output expression="&quot;Silahkan pilih ruang datar yang tersedia :&quot;" newline="True"/>
+            <output expression="&quot;Silahkan pilih ruang datar yang tersedia&quot;" newline="True"/>
+            <output expression="&quot;1. Luas persegi&quot;" newline="True"/>
+            <output expression="&quot;2. Keliling persegi&quot;" newline="True"/>
+            <output expression="&quot;3. Luas segitiga&quot;" newline="True"/>
+            <output expression="&quot;4. Keliling segitiga&quot;" newline="True"/>
+            <output expression="&quot;5. Luas jajargenjang&quot;" newline="True"/>
+            <output expression="&quot;6. Keliling jajargenjang&quot;" newline="True"/>
+            <output expression="&quot;7. Keluar program&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <if expression="pilihan == 1">
+                <then>
+                    <output expression="&quot;Menghitung luas persegi&quot;" newline="True"/>
+                    <output expression="&quot;Masukkan panjang sisi&quot;" newline="True"/>
+                    <input variable="sisipersegi"/>
+                    <assign variable="luaspersegi" expression="2 * sisipersegi"/>
+                    <output expression="luaspersegi" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pilihan == 2">
+                        <then>
+                            <output expression="&quot;Menghitung keliling persegi&quot;" newline="True"/>
+                            <output expression="&quot;Masukkan panjang sisi&quot;" newline="True"/>
+                            <input variable="sisipersegi"/>
+                            <assign variable="kelilingpersegi" expression="4 * sisipersegi"/>
+                            <output expression="kelilingpersegi" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan == 3">
+                                <then>
+                                    <output expression="&quot;Menghitung luas segitiga&quot;" newline="True"/>
+                                    <output expression="&quot;Masukkan panjang alas&quot;" newline="True"/>
+                                    <input variable="alassegitiga"/>
+                                    <output expression="&quot;Masukkan tinggi&quot;" newline="True"/>
+                                    <input variable="tinggisegitiga"/>
+                                    <assign variable="luassegitiga" expression="0.5 * alassegitiga * tinggisegitiga"/>
+                                    <output expression="luassegitiga" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan == 4">
+                                        <then>
+                                            <output expression="&quot;Menghitung keliling segitga&quot;" newline="True"/>
+                                            <output expression="&quot;Masukkan panjang sisi A&quot;" newline="True"/>
+                                            <input variable="sisiasegitiga"/>
+                                            <output expression="&quot;Masukkan panjang sisi B&quot;" newline="True"/>
+                                            <input variable="sisibsegitiga"/>
+                                            <output expression="&quot;Masukkan panjang sisi C&quot;" newline="True"/>
+                                            <input variable="sisicsegitiga"/>
+                                            <assign variable="kelilingsegitiga" expression="sisiasegitiga + sisibsegitiga + sisicsegitiga"/>
+                                            <input variable="kelilingsegitiga"/>
+                                            <output expression="kelilingsegitiga" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="pilihan == 5">
+                                                <then>
+                                                    <output expression="&quot;Menghitung luas jajargenjang&quot;" newline="True"/>
+                                                    <output expression="&quot;Masukkan panjang alas&quot;" newline="True"/>
+                                                    <input variable="alasjajargenjang"/>
+                                                    <output expression="&quot;Masukkan tinggi&quot;" newline="True"/>
+                                                    <input variable="tinggijajargenjang"/>
+                                                    <assign variable="luasjajargenjang" expression="alasjajargenjang + tinggijajargenjang"/>
+                                                    <output expression="luasjajargenjang" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="pilihan == 6">
+                                                        <then>
+                                                            <output expression="&quot;Menghitung keliling jajargenjang&quot;" newline="True"/>
+                                                            <output expression="&quot;Masukkan panjang sisi a&quot;" newline="True"/>
+                                                            <input variable="sisia"/>
+                                                            <output expression="&quot;Masukkan panjang sisi b&quot;" newline="True"/>
+                                                            <input variable="sisib"/>
+                                                            <output expression="&quot;Masukkan panjang sisi c&quot;" newline="True"/>
+                                                            <input variable="sisic"/>
+                                                            <output expression="&quot;Masukkan panjang sisi d&quot;" newline="True"/>
+                                                            <input variable="sisid"/>
+                                                            <assign variable="kelilingjajargenjang" expression="sisia + sisib + sisic + sisid"/>
+                                                            <output expression="kelilingjajargenjang" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="pilihan == 7">
+                                                                <then>
+                                                                    <output expression="&quot;Anda telah keluar dari program! Terimakasih telah mencoba!&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Input tidak valid/terdaftar&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
